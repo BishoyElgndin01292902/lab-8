@@ -43,3 +43,16 @@ console.log("Cloned Student:", studentClone);
 const newCourses = ["Biology", "Chemistry"];
 const allCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses:", allCourses);
+
+//  Part 5: Add Object Methods
+student.addCourse = function(courseName) {
+  this.courses.push(courseName);
+};
+
+student.totalCourses = function() {
+  return this.courses.length;
+};
+
+student.addCourse("English");
+console.log("Courses after adding:", student.courses);
+console.log("Total courses:", student.totalCourses());
