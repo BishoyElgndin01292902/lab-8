@@ -1,7 +1,22 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
 body {
   font-family: Arial, sans-serif;
+  background-color: #546b8d;
+  
   text-align: center;
-  margin-top: 50px;
-  background-color: #f9f9f9;
-  color: #333;
+  padding: 2rem;
+}
+
+/* Main heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000a13;
 }
