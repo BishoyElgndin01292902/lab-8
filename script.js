@@ -56,3 +56,8 @@ student.totalCourses = function() {
 student.addCourse("English");
 console.log("Courses after adding:", student.courses);
 console.log("Total courses:", student.totalCourses());
+
+
+// Bonus Task: Calculate Average Score
+const averageScore = scores.reduce((sum, curr) => sum + curr, 0) / scores.length;
+console.log("Average Score:", averageScore.toFixed(2));
