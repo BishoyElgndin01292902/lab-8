@@ -31,3 +31,15 @@ const scores = [85, 92, 78, 90];
 const [firstScore, secondScore] = scores;
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
+
+
+// Part 4: Spread Operator (Clone, Extend, Merge)
+
+// Clone and extend object
+const studentClone = { ...student, graduationYear: 2026 };
+console.log("Cloned Student:", studentClone);
+
+// Merge courses
+const newCourses = ["Biology", "Chemistry"];
+const allCourses = [...student.courses, ...newCourses];
+console.log("Merged Courses:", allCourses);
